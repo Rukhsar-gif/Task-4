@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A responsive digital clock built using HTML5, CSS3 and JavaScript."
+    >
+
+    <meta name="author" content="Rukhsar Hussain">
+
+    <title>Digital Clock </title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="clock-container" aria-labelledby="clock-title">
+
+            <!-- Header -->
+            <header class="header">
+
+                <p class="task-label">
+                     TASK 4
+                </p>
+
+                <h1 id="clock-title">
+                    Digital Clock
+                </h1>
+
+                <p class="description">
+                    A simple live digital clock that updates automatically
+                    every second.
+                </p>
+
+            </header>
+
+
+            <!-- Main Clock -->
+            <section
+                class="clock-card"
+                aria-label="Current local time"
+            >
+
+                <p
+                    class="current-date"
+                    id="currentDate"
+                >
+                    Loading date...
+                </p>
+
+                <div
+                    class="clock"
+                    id="clock"
+                    aria-live="polite"
+                    aria-atomic="true"
+                >
+                    00:00:00
+                </div>
+
+                <p class="timezone-note">
+                    LOCAL TIME
+                </p>
+
+            </section>
+
+
+            <!-- Clock Information -->
+            <section
+                class="info-section"
+                aria-label="Clock information"
+            >
+
+                <!-- Current Time -->
+                <article class="info-card">
+
+                    <span class="info-label">
+                        CURRENT TIME
+                    </span>
+
+                    <strong id="currentTimeSmall">
+                        00 : 00 : 00
+                    </strong>
+
+                </article>
+
+
+                <!-- Update Frequency -->
+                <article class="info-card">
+
+                    <span class="info-label">
+                        UPDATE
+                    </span>
+
+                    <strong>
+                        Every Second
+                    </strong>
+
+                </article>
+
+
+                <!-- Source -->
+                <article class="info-card">
+
+                    <span class="info-label">
+                        SOURCE
+                    </span>
+
+                    <strong>
+                        Device Time
+                    </strong>
+
+                </article>
+
+            </section>
+
+
+            <!-- Footer -->
+            <footer class="footer">
+
+                <p>
+                    Built with HTML5, CSS3 and JavaScript
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
